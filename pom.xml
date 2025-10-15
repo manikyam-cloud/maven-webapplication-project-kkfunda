@@ -9,11 +9,11 @@
 	
 	<name>maven-web-application</name>
 
-	<description>Maven Web Project for Java Project</description>
+	<description>Maven Web Project for Devops Project</description>
 
 	<organization>
 		<name>Mani Devops</name>
-		<url>http://kkfunda.com</url>
+		<url>http://manidevops.com</url>
 	</organization>
 
 	<properties>
