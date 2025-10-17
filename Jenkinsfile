@@ -11,7 +11,7 @@ pipeline {
           steps
           {
            //testing
-             git branch: 'development', url: 'https://github.com/kkdevopsb6/maven-webapplication-project-kkfunda.git'
+             git branch: 'development', url: 'https://github.com/manikyam-cloud/maven-webapplication-project-kkfunda.git'
           }
         } //stage  close
         stage('build')
@@ -40,9 +40,9 @@ pipeline {
         {
         steps {
                 sh """
-            curl -u kk:password \
-            --upload-file /var/lib/jenkins/workspace/DLPL/target/maven-web-application.war \
-            "http://65.2.35.68:8080/manager/text/deploy?path=/maven-web-application&update=true"
+            curl -u mani:mani \
+            --upload-file /var/lib/jenkins/workspace/mbpl-project/target/maven-web-application.war \
+            "http://52.66.242.2:8080/manager/text/deploy?path=/maven-web-application&update=true"
         """
             }
         }  //stage ending
