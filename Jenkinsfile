@@ -11,7 +11,7 @@ pipeline {
           steps
           {
            //testing
-             git branch: 'development', url: 'https://github.com/manikyam-cloud/maven-webapplication-project-kkfunda.git'
+             git branch: 'patch-1', url: 'https://github.com/manikyam-cloud/maven-webapplication-project-kkfunda.git'
           }
         } //stage  close
         stage('build')
