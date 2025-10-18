@@ -41,7 +41,7 @@ pipeline {
         steps {
                 sh """
             curl -u mani:mani \
-            --upload-file /var/lib/jenkins/workspace/mbpl-project/target/maven-web-application.war \
+            --upload-file /var/lib/jenkins/workspace/target/maven-web-application.war \
             "http://52.66.242.2:8080/manager/text/deploy?path=/maven-web-application&update=true"
         """
             }
